@@ -24,3 +24,11 @@ windows:
       panes:
         - rails server
         - rails console
+  - railsstuff:
+      layout: even-horizontal
+      panes:
+        - bundle exec guard
+        - #empty
+  - fulledit:
+      panes:
+        - vim
