@@ -14,8 +14,9 @@ windows:
         - #empty
         - #empty
   - editor:
-      layout: main-vertical
+      layout: 4dac,173x42,0,0{31x42,0,0,0,73x42,32,0,1,67x42,106,0,2}
       panes:
+        - vim -c :Explore
         - vim
         - vim
   - server/console:
