@@ -28,7 +28,7 @@ windows:
       layout: even-horizontal
       panes:
         - bundle exec guard
-        - #empty
+        - travis monitor -i -n -r ganeshran/railstest 
   - fulledit:
       panes:
         - vim -c :NERDTree
