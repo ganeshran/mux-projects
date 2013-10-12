@@ -31,4 +31,4 @@ windows:
         - #empty
   - fulledit:
       panes:
-        - vim
+        - vim -c :NERDTree
