@@ -1,7 +1,7 @@
-# ~/.tmuxinator/bambaramrails.yml
+# ~/.tmuxinator/flask.yml
 
-name: Bambaramrails
-root: ~/Development/bambaramrails
+name: FlaskApp 
+root: ~/Development/CDMMatcher
 
 windows:
   - main:
@@ -16,13 +16,13 @@ windows:
   - server/console:
       layout: even-vertical
       panes:
-        - rails server
-        - rails console
-  - railsstuff:
+        - ./run.py 
+        - vpnconnect 
+  - flaskstuff:
       layout: even-horizontal
       panes:
-        - bundle exec guard
-        - travis monitor -i -n -r ganeshran/railstest 
+        - #empty 
+        - #empty
   - fulledit:
       panes:
         - vim -c :NERDTree
