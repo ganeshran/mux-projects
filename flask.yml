@@ -21,8 +21,8 @@ windows:
   - flaskstuff:
       layout: even-horizontal
       panes:
-        - #empty 
-        - #empty
+        - source flask/bin/activate 
+        - source flask/bin/activate 
   - database:
       layout: even-vertical
       panes:
