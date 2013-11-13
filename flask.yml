@@ -31,3 +31,8 @@ windows:
   - fulledit:
       panes:
         - vim -c :NERDTree
+  - DeployToServer:
+      layout: even-vertical
+      panes:
+        - ssh grangana@devid.local@192.168.16.229
+        - source flask/bin/activate 
