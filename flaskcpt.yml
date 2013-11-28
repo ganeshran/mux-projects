@@ -31,6 +31,9 @@ windows:
   - fulledit:
       panes:
         - vim -c :NERDTree
+  - fulledit2:
+      panes:
+        - vim -c :NERDTree
   - DeployToServer:
       layout: even-vertical
       panes:
