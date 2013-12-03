@@ -1,0 +1,28 @@
+# ~/.tmuxinator/crimsonserviceweek.yml
+
+name: Bambaramrails
+root: ~/Development/crimsonserviceweek
+
+windows:
+  - main:
+      layout: adb7,159x37,0,0{49x37,0,0[49x28,0,0,49x8,0,29],54x37,50,0,54x37,105,0[54x8,105,0,54x19,105,9,54x8,105,29]} 
+      panes:
+        - #empty 
+        - #empty
+        - #empty 
+        - #empty
+        - #empty
+        - #empty
+  - server/console:
+      layout: even-vertical
+      panes:
+        - rails server
+        - rails console
+  - railsstuff:
+      layout: even-horizontal
+      panes:
+        - bundle exec guard
+        - #empty
+  - fulledit:
+      panes:
+        - vim -c :NERDTree
