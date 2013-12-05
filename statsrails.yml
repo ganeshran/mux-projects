@@ -14,11 +14,16 @@ windows:
         - #empty
         - #empty
   - editor:
-      layout: 4dac,173x42,0,0{31x42,0,0,0,73x42,32,0,1,67x42,106,0,2}
+      layout: even-vertical
       panes:
-        - vim -c :Explore
         - vim
         - vim
+  - fulledit:
+      panes:
+        - vim -c :NERDTree
+  - fulledit:
+      panes:
+        - vim -c :NERDTree
   - server/console:
       layout: even-vertical
       panes:
@@ -29,6 +34,3 @@ windows:
       panes:
         - bundle exec guard
         - #empty 
-  - fulledit:
-      panes:
-        - vim -c :NERDTree
