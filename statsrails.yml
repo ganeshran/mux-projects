@@ -14,7 +14,7 @@ windows:
         - #empty
         - #empty
   - editor:
-      layout: even-vertical
+      layout: even-horizontal
       panes:
         - vim
         - vim
