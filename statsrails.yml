@@ -1,4 +1,5 @@
 # ~/.tmuxinator/statsrails.yml
+# The app for statsrails
 
 name: statsapp 
 root: ~/Development/statsapp
