@@ -1,4 +1,4 @@
-# ~/.tmuxinator/bambaramrails.yml
+# ~/.tmuxinator/statsrails.yml
 
 name: statsapp 
 root: ~/Development/statsapp
