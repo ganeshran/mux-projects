@@ -1,5 +1,7 @@
 # ~/.tmuxinator/crimsonserviceweek.yml
 
+pre_window: rvm use 1.9.3@CrimsonServiceWeek
+
 name: Bambaramrails
 root: ~/Development/crimsonserviceweek
 
@@ -13,6 +15,17 @@ windows:
         - #empty
         - #empty
         - #empty
+  - fulledit:
+      panes:
+        - vim -c :NERDTree
+  - fulledit2:
+      panes:
+        - vim -c :NERDTree
+  - semiedit:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
   - server/console:
       layout: even-vertical
       panes:
@@ -21,8 +34,7 @@ windows:
   - railsstuff:
       layout: even-horizontal
       panes:
-        - bundle exec guard
         - #empty
-  - fulledit:
-      panes:
-        - vim -c :NERDTree
+        - #empty
+  - maintenance:
+        - vpnconnect
