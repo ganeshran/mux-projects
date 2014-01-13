@@ -1,9 +1,9 @@
-# ~/.tmuxinator/bambaramrails.yml
+# ~/.tmuxinator/crimsonserviceweek.yml
 
-pre_window: rvm use 1.9.3@bambaram
+pre_window: rvm use 1.9.3@cdmrails
 
-name: Bambaramrails
-root: ~/Development/bambaramrails
+name: CDMMatcher 
+root: ~/Development/cdmrails
 
 windows:
   - main:
@@ -36,3 +36,5 @@ windows:
       panes:
         - #empty
         - #empty
+  - maintenance:
+        - vpnconnect
