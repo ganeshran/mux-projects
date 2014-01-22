@@ -21,6 +21,9 @@ windows:
   - fulledit2:
       panes:
         - vim -c :NERDTree
+  - fulledit3:
+      panes:
+        - vim -c :NERDTree
   - semiedit:
       layout: even-horizontal
       panes:
@@ -36,5 +39,3 @@ windows:
       panes:
         - #empty
         - #empty
-  - maintenance:
-        - vpnconnect
