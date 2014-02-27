@@ -1,9 +1,9 @@
-# ~/.tmuxinator/crimsonserviceweek.yml
+# ~/.tmuxinator/testemailrails.yml
 
-pre_window: rvm use 1.9.3@cdmrails
+pre_window: rvm use 1.9.3@testemailapp
 
-name: CDMMatcher 
-root: ~/Development/cdmrails
+name:  testemailapp
+root: ~/Development/testemailapp
 
 windows:
   - main:
@@ -42,5 +42,5 @@ windows:
   - maintenance:
       layout: even-horizontal
       panes:
-        - vpnconnect
-        - ssh grangana@devid.local@192.168.16.229
+        - #empty
+        - #empty
