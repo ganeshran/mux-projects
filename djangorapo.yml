@@ -1,7 +1,7 @@
 # ~/.tmuxinator/djangorapo.yml
 
 name: FlaskApp 
-root: ~/Development/rapoproject
+root: ~/Development/rapoproject/rapoapp
 
 windows:
   - main:
@@ -13,10 +13,19 @@ windows:
         - source django/bin/activate 
         - source django/bin/activate 
         - source django/bin/activate 
+  - fulledit:
+      panes:
+        - vim -c :NERDTree
+  - fulledit2:
+      panes:
+        - vim -c :NERDTree
+  - fulledit3:
+      panes:
+        - vim -c :NERDTree
   - server/console:
       layout: even-vertical
       panes:
-        - source django/bin/activate && rapoapp/manage.py runserver
+        - source django/bin/activate && ./manage.py runserver
         - source django/bin/activate 
   - djangostuff:
       layout: even-horizontal
@@ -28,12 +37,6 @@ windows:
       panes:
         - sqlite3 app.db
         - source django/bin/activate 
-  - fulledit:
-      panes:
-        - vim -c :NERDTree
-  - fulledit2:
-      panes:
-        - vim -c :NERDTree
   - DeployToServer:
       layout: even-vertical
       panes:
