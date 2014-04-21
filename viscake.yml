@@ -1,9 +1,7 @@
-# ~/.tmuxinator/ssorails.yml
-
-pre_window: rvm use 1.9.3@ssorails
+# ~/.tmuxinator/vizrails.yml
 
 name: CDMMatcher 
-root: ~/Development/ssotest
+root: /var/www/visibleconnectus
 
 windows:
   - main:
@@ -32,8 +30,8 @@ windows:
   - server/console:
       layout: even-vertical
       panes:
-        - rails server
-        - rails console
+        - #empty
+        - #empty
   - railsstuff:
       layout: even-horizontal
       panes:
