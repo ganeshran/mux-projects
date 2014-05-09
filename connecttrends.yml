@@ -39,3 +39,8 @@ windows:
       panes:
         - #empty
         - #empty
+  - testing:
+      layout: even-horizontal
+      panes:
+        - guard
+        - #empty
