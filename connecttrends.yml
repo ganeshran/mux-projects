@@ -42,5 +42,5 @@ windows:
   - testing:
       layout: even-horizontal
       panes:
-        - guard
+        - guard 
         - #empty
