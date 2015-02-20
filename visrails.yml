@@ -24,6 +24,9 @@ windows:
   - fulledit3:
       panes:
         - vim -c :NERDTree
+  - fulledit4:
+      panes:
+        - vim -c :NERDTree
   - semiedit:
       layout: even-horizontal
       panes:
@@ -38,4 +41,9 @@ windows:
       layout: even-horizontal
       panes:
         - #empty
+        - #empty
+  - testing:
+      layout: even-horizontal
+      panes:
+        - guard 
         - #empty
