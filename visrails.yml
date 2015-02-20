@@ -1,6 +1,6 @@
 # ~/.tmuxinator/vizrails.yml
 
-pre_window: rvm use 1.9.3@visrails
+pre_window: rvm use 2.0.0-p598@visrails
 
 name: CDMMatcher 
 root: ~/Development/visrails
