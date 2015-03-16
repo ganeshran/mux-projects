@@ -1,0 +1,18 @@
+# ~/.tmuxinator/crimsonserviceweek.yml
+
+#pre_window: rvm use 1.9.3@cdmrails
+
+name: gittest
+root: ~/Development/learn/AllGitTuts/second
+
+windows:
+  - server/console:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
+  - railsstuff:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
