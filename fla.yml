@@ -1,0 +1,47 @@
+# ~/.tmuxinator/vizrails.yml
+
+pre_window: rvm use 2.0.0@fla
+
+name: Free Legal Agreements
+root: ~/Development/fla
+
+windows:
+  - main:
+      layout: eb68,145x33,0,0{44x33,0,0[44x26,0,0,0,44x6,0,27,9],49x33,45,0,10,50x33,95,0,12} 
+      panes:
+        - #empty 
+        - #empty
+        - #empty 
+        - #empty
+  - fulledit:
+      panes:
+        - vim -c :NERDTree
+  - fulledit2:
+      panes:
+        - vim -c :NERDTree
+  - fulledit3:
+      panes:
+        - vim -c :NERDTree
+  - fulledit4:
+      panes:
+        - vim -c :NERDTree
+  - semiedit:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
+  - server/console:
+      layout: even-vertical
+      panes:
+        - rails server
+        - rails console
+  - railsstuff:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
+  - testing:
+      layout: even-horizontal
+      panes:
+        - guard 
+        - #empty
