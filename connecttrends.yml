@@ -1,6 +1,6 @@
 # ~/.tmuxinator/vizrails.yml
 
-pre_window: rvm use 2.0.0@connecttrends
+pre_window: rvm use 2.0.0-p643@connecttrends
 
 name: ConnectTrends
 root: ~/Development/connecttrends

@@ -1,0 +1,22 @@
+# ~/.tmuxinator/vizrails.yml
+
+
+name: Algo
+root: ~/Development/learn/algo
+
+windows:
+  - semiedit:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
+  - railsstuff:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty
+  - testing:
+      layout: even-horizontal
+      panes:
+        - guard 
+        - #empty
