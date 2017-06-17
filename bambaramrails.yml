@@ -1,6 +1,6 @@
-# ~/.tmuxinator/bambaramrails.yml
+# ~/.tmuxinator/crimsonserviceweek.yml
 
-pre_window: rvm use 1.9.3@bambaram
+pre_window: rvm use 1.9.3@bambaramrails
 
 name: Bambaramrails
 root: ~/Development/bambaramrails
@@ -19,6 +19,9 @@ windows:
       panes:
         - vim -c :NERDTree
   - fulledit2:
+      panes:
+        - vim -c :NERDTree
+  - fulledit3:
       panes:
         - vim -c :NERDTree
   - semiedit:

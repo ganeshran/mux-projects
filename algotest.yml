@@ -1,9 +1,8 @@
-# ~/.tmuxinator/vizrails.yml
+# ~/.tmuxinator/crimsonserviceweek.yml
 
-pre_window: rvm use 2.0.0-p598@visrails
 
-name: CDMMatcher 
-root: ~/Development/visrails
+name: AlgoTest
+root: ~/Development/csharp
 
 windows:
   - main:
@@ -24,26 +23,8 @@ windows:
   - fulledit3:
       panes:
         - vim -c :NERDTree
-  - fulledit4:
-      panes:
-        - vim -c :NERDTree
   - semiedit:
       layout: even-horizontal
       panes:
         - #empty
-        - #empty
-  - server/console:
-      layout: even-vertical
-      panes:
-        - rails server
-        - rails console
-  - railsstuff:
-      layout: even-horizontal
-      panes:
-        - #empty
-        - #empty
-  - testing:
-      layout: even-horizontal
-      panes:
-        - guard 
         - #empty

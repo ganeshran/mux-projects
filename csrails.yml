@@ -39,5 +39,3 @@ windows:
       panes:
         - #empty
         - #empty
-  - maintenance:
-        - vpnconnect

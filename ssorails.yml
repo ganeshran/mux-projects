@@ -1,4 +1,4 @@
-# ~/.tmuxinator/ssorails.yml
+# ~/.tmuxinator/vizrails.yml
 
 pre_window: rvm use 1.9.3@ssorails
 

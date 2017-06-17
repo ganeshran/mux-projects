@@ -1,9 +1,9 @@
 # ~/.tmuxinator/vizrails.yml
 
-pre_window: rvm use 2.0.0-p598@visrails
+pre_window: rvm use 1.9.3@testflatify
 
-name: CDMMatcher 
-root: ~/Development/visrails
+name: TestFlatify
+root: ~/Development/testflatify
 
 windows:
   - main:
@@ -24,9 +24,6 @@ windows:
   - fulledit3:
       panes:
         - vim -c :NERDTree
-  - fulledit4:
-      panes:
-        - vim -c :NERDTree
   - semiedit:
       layout: even-horizontal
       panes:
@@ -41,9 +38,4 @@ windows:
       layout: even-horizontal
       panes:
         - #empty
-        - #empty
-  - testing:
-      layout: even-horizontal
-      panes:
-        - guard 
         - #empty
