@@ -1,9 +1,9 @@
 # ~/.tmuxinator/vizrails.yml
 
-pre_window: rvm use 2.4.3@connecttrends
+pre_window: rvm use 2.4.1@sinatrabot
 
 name: ConnectTrends
-root: ~/repo/personal/rails/statsappfrontend
+root: ~/repo/project/sinatrabot
 
 windows:
   - main:
@@ -35,8 +35,8 @@ windows:
   - server/console:
       layout: even-vertical
       panes:
-        - rails server
-        - rails console
+        - #empty
+        - #empty
   - railsstuff:
       layout: even-horizontal
       panes:
@@ -45,5 +45,5 @@ windows:
   - testing:
       layout: even-horizontal
       panes:
-        - guard 
+        - #empty
         - #empty

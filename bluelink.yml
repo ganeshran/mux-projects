@@ -34,26 +34,26 @@ windows:
       layout: eb68,145x33,0,0{44x33,0,0[44x26,0,0,0,44x6,0,27,9],49x33,45,0,10,50x33,95,0,12} 
       panes:
         - #empty 
-        - #empty
+        - cli-clock
         - #empty 
         - #empty
   - fulledit:
       name: Components
-      root: ~/repo/dotnet/bluelink/Bluelink/src/Bluelink.UI/js/components
+      root: ~/repo/dotnet/bluelink/Bluelink.UI/js/components
       panes:
         - vim -c :NERDTree
   - fulledit2:
       name: Services
-      root: ~/repo/dotnet/bluelink/Bluelink/src/Bluelink.UI/js/services
+      root: ~/repo/dotnet/bluelink/Bluelink.UI/js/services
       panes:
         - vim -c :NERDTree
   - fulledit3:
       name: Store
-      root: ~/repo/dotnet/bluelink/Bluelink/src/Bluelink.UI/js/store
+      root: ~/repo/dotnet/bluelink/Bluelink.UI/js/store
       panes:
         - vim -c :NERDTree
   - fulledit4:
-      root: ~/repo/dotnet/bluelink/Bluelink/src/Bluelink.UI
+      root: ~/repo/dotnet/bluelink/Bluelink.UI
       panes:
         - vim -c :NERDTree
   - semiedit:
@@ -62,16 +62,15 @@ windows:
         - #empty
         - #empty
   - server/console:
-      root: ~/repo/dotnet/bluelink/Bluelink/src/Bluelink.UI         
+      root: ~/repo/dotnet/bluelink/Bluelink.UI         
       panes:
-        - npm run start:unstable
+          - npm run client:unstable
   - railsstuff:
       layout: even-horizontal
       panes:
         - #empty
         - #empty
-  - testing:
-      layout: even-horizontal
+  - htop:
+      name: Monitor
       panes:
-        - guard 
-        - #empty
+        - htop
