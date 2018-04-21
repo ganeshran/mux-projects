@@ -3,7 +3,7 @@
 pre_window: rvm use 2.4.1@bluebot
 
 name: Bluebot
-root: ~/repo/project/bluebot
+root: ~/repo/bluebot
 
 windows:
   - main:
