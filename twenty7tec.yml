@@ -30,7 +30,7 @@ windows:
   - semiedit:
       layout: even-horizontal
       panes:
-        - DEBUG=twenty7tec:* npm start
+        - DEBUG=twenty7tec:* nodemon
         - #empty
   - server/console:
       layout: even-vertical
