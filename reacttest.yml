@@ -41,7 +41,7 @@ windows:
       layout: even-horizontal
       panes:
         - #empty
-        - #empty
+        - npm start
   - testing:
       layout: even-horizontal
       panes:
