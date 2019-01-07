@@ -1,59 +1,30 @@
-# ~/.tmuxinator/bluelink.yml
+# ~/.tmuxinator/vizrails.yml
 
-name: bluelink
-root: ~/repo/dotnet/bluelink/
+pre_window: rvm use 2.5.3@reactlearn
 
-# Optional tmux socket
-# socket_name: foo
+name: react-learn
+root: ~/repo/project/bluelink
 
-# Runs before everything. Use it to start daemons etc.
-# pre: sudo /etc/rc.d/mysqld start
-
-# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
-
-# Pass command line options to tmux. Useful for specifying a different tmux.conf.
-# tmux_options: -f ~/.tmux.mac.conf
-
-# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
-# tmux_command: byobu
-
-# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-# startup_window: editor
-
-# Specitifes (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
-# startup_pane: 1
-
-# Controls whether the tmux session should be attached to automatically. Defaults to true.
-# attach: false
-
-# Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t bluelink
 windows:
   - main:
-      layout: eb68,145x33,0,0{44x33,0,0[44x26,0,0,0,44x6,0,27,9],49x33,45,0,10,50x33,95,0,12} 
+      layout: adb7,159x37,0,0{49x37,0,0[49x28,0,0,49x8,0,29],54x37,50,0,54x37,105,0[54x8,105,0,54x19,105,9,54x8,105,29]} 
       panes:
         - #empty 
-        - cli-clock
+        - #empty
         - #empty 
         - #empty
+        - #empty
+        - #empty
   - fulledit:
-      name: Components
-      root: ~/repo/dotnet/bluelink/Bluelink.UI/js/components
       panes:
         - vim -c :NERDTree
   - fulledit2:
-      name: Services
-      root: ~/repo/dotnet/bluelink/Bluelink.UI/js/services
       panes:
         - vim -c :NERDTree
   - fulledit3:
-      name: Store
-      root: ~/repo/dotnet/bluelink/Bluelink.UI/js/store
       panes:
         - vim -c :NERDTree
   - fulledit4:
-      root: ~/repo/dotnet/bluelink/Bluelink.UI
       panes:
         - vim -c :NERDTree
   - semiedit:
@@ -62,15 +33,17 @@ windows:
         - #empty
         - #empty
   - server/console:
-      root: ~/repo/dotnet/bluelink/Bluelink.UI         
+      layout: even-vertical
       panes:
-          - npm run client:unstable
+        - #empty
+        - #empty
   - railsstuff:
       layout: even-horizontal
       panes:
         - #empty
-        - #empty
-  - htop:
-      name: Monitor
+        - npm start
+  - testing:
+      layout: even-horizontal
       panes:
-        - htop
+        - #empty
+        - #empty
