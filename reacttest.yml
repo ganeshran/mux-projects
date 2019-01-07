@@ -17,16 +17,16 @@ windows:
         - #empty
   - fulledit:
       panes:
-        - vim -c :NERDTree
+        - nvim -c :NERDTree
   - fulledit2:
       panes:
-        - vim -c :NERDTree
+        - nvim -c :NERDTree
   - fulledit3:
       panes:
-        - vim -c :NERDTree
+        - nvim -c :NERDTree
   - fulledit4:
       panes:
-        - vim -c :NERDTree
+        - nvim -c :NERDTree
   - semiedit:
       layout: even-horizontal
       panes:
