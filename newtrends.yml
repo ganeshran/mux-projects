@@ -22,9 +22,11 @@ windows:
       panes:
         - vim -c :NERDTree
   - fulledit3:
+      root: ~/repo/connecttrends/servers/express
       panes:
         - vim -c :NERDTree
   - fulledit4:
+      root: ~/repo/connecttrends/servers/express
       panes:
         - vim -c :NERDTree
   - semiedit:
@@ -32,15 +34,15 @@ windows:
       panes:
         - #empty
         - #empty
-  - server/console:
+  - client:
       layout: even-vertical
       panes:
         - yarn start
         - #empty
-  - railsstuff:
+  - server:
       layout: even-horizontal
       panes:
-        - #empty
+        - cd servers/express && npm start
         - #empty
   - testing:
       layout: even-horizontal
