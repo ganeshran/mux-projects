@@ -14,19 +14,18 @@ windows:
         - #empty 
         - #empty
         - #empty
-        - #empty
   - fulledit:
+      root: ~/repo/connecttrends/client
       panes:
         - vim -c :NERDTree
   - fulledit2:
+      root: ~/repo/connecttrends/client
       panes:
         - vim -c :NERDTree
   - fulledit3:
-      root: ~/repo/connecttrends/servers/express
       panes:
         - vim -c :NERDTree
   - fulledit4:
-      root: ~/repo/connecttrends/servers/express
       panes:
         - vim -c :NERDTree
   - semiedit:
@@ -37,12 +36,12 @@ windows:
   - client:
       layout: even-vertical
       panes:
-        - yarn start
+        - cd client && yarn start
         - #empty
   - server:
       layout: even-horizontal
       panes:
-        - cd servers/express && npm start
+        - yarn start
         - #empty
   - testing:
       layout: even-horizontal
