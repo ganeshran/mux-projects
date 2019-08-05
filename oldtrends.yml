@@ -2,7 +2,7 @@
 
 pre_window: rvm use 2.4.3@connecttrends
 
-name: ConnectTrends
+name: OldTrends 
 root: ~/repo/oldtrends
 
 windows:
