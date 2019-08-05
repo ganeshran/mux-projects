@@ -3,7 +3,7 @@
 pre_window: rvm use 2.4.3@connecttrends
 
 name: ConnectTrends
-root: ~/repo/personal/rails/statsappfrontend
+root: ~/repo/oldtrends
 
 windows:
   - main:
