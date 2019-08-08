@@ -35,7 +35,7 @@ windows:
   - server/console:
       layout: even-vertical
       panes:
-        - rails server -p 3006
+        - rails server -p 3001
         - rails console
   - railsstuff:
       layout: even-horizontal
