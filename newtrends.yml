@@ -15,17 +15,19 @@ windows:
         - #empty
         - #empty
   - fulledit:
-      root: ~/repo/connecttrends/client
+      root: ~/repo/connecttrends/packages/client
       panes:
         - vim -c :NERDTree
   - fulledit2:
-      root: ~/repo/connecttrends/client
+      root: ~/repo/connecttrends/packages/client
       panes:
         - vim -c :NERDTree
   - fulledit3:
+      root: ~/repo/connecttrends/packages/server
       panes:
         - vim -c :NERDTree
   - fulledit4:
+      root: ~/repo/connecttrends/packages/server
       panes:
         - vim -c :NERDTree
   - semiedit:
@@ -36,15 +38,13 @@ windows:
   - client:
       layout: even-vertical
       panes:
-        - cd client && yarn start
-        - #empty
+        - yarn start:client
+        - yarn start:isomorphic
   - server:
       layout: even-horizontal
       panes:
-        - yarn start
+        - yarn start:server
         - #empty
   - testing:
-      layout: even-horizontal
-      panes:
-        - guard 
-        - #empty
+  - testing:
+  - testing:
