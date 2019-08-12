@@ -45,6 +45,6 @@ windows:
       panes:
         - yarn start:server
         - #empty
-  - testing:
-  - testing:
-  - testing:
+  - additional1:
+  - additional2:
+  - additional3:
