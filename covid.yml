@@ -1,8 +1,8 @@
 # ~/.tmuxinator/vizrails.yml
 
-pre_window: rvm use 2.6.3@connecttrends
+pre_window: rvm use 2.6.3@covid
 
-name: ConnectTrends
+name: covid
 root: ~/repo/elycovid
 
 windows:
